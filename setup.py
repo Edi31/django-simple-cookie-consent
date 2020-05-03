@@ -1,7 +1,7 @@
 import os
 
 from setuptools import setup, find_packages
-import languages as app
+import django_simple_cookie_consent as app
 
 def read(fname):
     try:
@@ -19,7 +19,7 @@ setup(
   url = 'https://github.com/Edi31/django-simple-cookie-consent', # use the URL to the github repo
   license='MIT',
   platforms=['OS Independent'],
-  packages = ['languages'], # this must be the same as the name above
+  packages = ['django_simple_cookie_consent'], # this must be the same as the name above
   zip_safe=False,
   keywords = ['django','cookies','consent','banner'], # arbitrary keywords
   classifiers=[
