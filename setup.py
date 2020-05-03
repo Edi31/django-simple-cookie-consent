@@ -1,7 +1,6 @@
 import os
 
 from setuptools import setup, find_packages
-import django_simple_cookie_consent as app
 
 def read(fname):
     try:
@@ -11,7 +10,7 @@ def read(fname):
 
 setup(
   name = 'django-simple-cookie-consent',
-  version = app.__version__,
+  version = "0.1",
   description = 'A pluggable django app that provides a banner for cookies consent',
   long_description=read('README.rst'),
   author = 'Squarehost Ltd',
@@ -19,7 +18,7 @@ setup(
   url = 'https://github.com/Edi31/django-simple-cookie-consent', # use the URL to the github repo
   license='MIT',
   platforms=['OS Independent'],
-  packages = ['django_simple_cookie_consent'], # this must be the same as the name above
+  packages = find_packages(), # this must be the same as the name above
   zip_safe=False,
   keywords = ['django','cookies','consent','banner'], # arbitrary keywords
   classifiers=[
